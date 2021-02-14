@@ -1,0 +1,13 @@
+.offer {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    & > .offer_headline {
+        font-size: 2.5rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    & > .offer_underline {
+        font-size: 1.1rem;
+    }
+}

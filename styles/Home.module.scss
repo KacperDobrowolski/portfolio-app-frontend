@@ -1,0 +1,22 @@
+@import '../styles/variables.scss';
+
+.header_image {
+    width: 90%;
+    height: 300px;
+    background-image: url('/assets/images/header.jpg');
+    background-size: cover;
+    margin: 0 auto;
+    text-align: center;
+    & > .header_headline {
+        padding-top: 50px;
+        margin: 0;
+        font-size: 2.5rem;
+        color: $primary-color;
+        letter-spacing: 1px;
+    }
+    & > .header_underline {
+        font-size: 1.3rem;
+        color: $secondary-color;
+        letter-spacing: 1px;
+    }
+}
