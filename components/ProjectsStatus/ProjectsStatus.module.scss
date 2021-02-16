@@ -1,0 +1,33 @@
+@import '../../styles/variables.scss';
+
+.projectsStatus {
+    width: 90%;
+    background-color: $primary-color;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px 0 30px 0;
+    & > .circle {
+        width: 120px;
+        height: 120px;
+        border: 2px solid white;
+        border-radius: 100%;
+        text-align: center;
+        color: white;
+        margin: 0 auto;
+        margin-top: 20px;
+        & > .counter {
+            font-size: 4rem;
+            margin: 0;
+            position: relative;
+            top: 15px;
+            font-weight: 500;
+        }
+        & > .counter_title {
+            letter-spacing: 1px;
+        }
+        &:first-child {
+            background-color: white;
+            color: black;
+        }
+    }
+}
