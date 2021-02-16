@@ -1,0 +1,40 @@
+@import '../../styles/variables.scss';
+
+.portfolio {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    & > .portfolio_headline {
+        font-size: 2.5rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    & > .portfolio_options {
+        & > .portfolio_list {
+            list-style: none;
+            padding: 0;
+            & > .list_item {
+                font-size: 1.3rem;
+                margin: 0 auto;
+                margin-top: 10px;
+                padding: 5px 5px 5px 5px;
+                border-radius: 20px;
+                width: 50%;
+                &:first-child {
+                    background-color: $primary-color;
+                    color: white;
+                }
+            }
+        }
+    }
+    & > .project {
+        background-image: url("/assets/images/header.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 200px;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+}
