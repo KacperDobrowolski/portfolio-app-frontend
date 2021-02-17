@@ -1,7 +1,7 @@
 import styles from './Portfolio.module.scss';
 import Button from '../Button/Button';
 
-export default function Portfolio() {
+const Portfolio = () => {
     return (
         <section className={styles.portfolio}>
             <h2 className={styles.portfolio_headline}>Moje projekty</h2>
@@ -19,3 +19,5 @@ export default function Portfolio() {
         </section>
     )
 }
+
+export default Portfolio;

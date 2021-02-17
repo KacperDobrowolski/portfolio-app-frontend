@@ -10,6 +10,13 @@
     letter-spacing: 1px;
     font-size: 1rem;
     margin-top: 15px;
+    transition: .2s;
+    &:hover {
+        background-color: white;
+        color: $primary-color;
+        cursor: pointer;
+        transition: .2s;
+    }
 }
 
 .btn_white {
@@ -22,4 +29,11 @@
     letter-spacing: 1px;
     font-size: 1.5rem;
     margin-top: 15px;
+    transition: .2s;
+    &:hover {
+        background-color: $primary-color;
+        color: white;
+        cursor: pointer;
+        transition: .2s;
+    }
 }

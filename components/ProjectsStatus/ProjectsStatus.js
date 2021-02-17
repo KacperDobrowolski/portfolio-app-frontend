@@ -1,6 +1,6 @@
 import styles from './ProjectsStatus.module.scss';
 
-export default function ProjectsStatus() {
+const ProjectsStatus = () => {
     return (
         <section className={styles.projectsStatus}>
               <div className={styles.circle}>
@@ -14,3 +14,5 @@ export default function ProjectsStatus() {
         </section>
     )
 }
+
+export default ProjectsStatus;

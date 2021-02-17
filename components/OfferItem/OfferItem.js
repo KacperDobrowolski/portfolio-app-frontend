@@ -1,7 +1,7 @@
 import { loadGetInitialProps } from 'next/dist/next-server/lib/utils';
 import styles from './OfferItem.module.scss';
 
-export default function OfferItem(props) {
+const OfferItem = (props) => {
     return (
         <div className={styles.offerItem}>
             <div className={styles.offerItemContent}>
@@ -12,3 +12,5 @@ export default function OfferItem(props) {
         </div>
     )
 }
+
+export default OfferItem;

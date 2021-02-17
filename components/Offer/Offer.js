@@ -1,7 +1,7 @@
 import OfferItem from '../OfferItem/OfferItem';
 import styles from './Offer.module.scss';
 
-export default function Offer() {
+const Offer = () => {
     return (
         <section className={styles.offer}>
             <h2 className={styles.offer_headline}>Co oferuje?</h2>
@@ -14,3 +14,5 @@ export default function Offer() {
         </section>
     )
 }
+
+export default Offer;

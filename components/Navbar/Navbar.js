@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import styles from './Navbar.module.scss';
 
-export default function Navbar() {
+const Navbar = () => {
     const navbarRef = useRef();
     const openNav = () => {
         navbarRef.current.classList.add(styles.opened);
@@ -17,3 +17,5 @@ export default function Navbar() {
         </nav>
     )
 }
+
+export default Navbar;

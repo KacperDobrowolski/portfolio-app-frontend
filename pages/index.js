@@ -5,6 +5,7 @@ import Button from '../components/Button/Button';
 import ProjectsStatus from '../components/ProjectsStatus/ProjectsStatus';
 import Portfolio from '../components/Portfolio/Portfolio';
 import styles from '../styles/Home.module.scss'
+import Contact from '../components/Contact/Contact';
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
             <Offer />
             <ProjectsStatus />
             <Portfolio />
+            <Contact />
         </Layout>
       </main>
 
