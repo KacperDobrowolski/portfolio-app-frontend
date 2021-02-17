@@ -32,7 +32,20 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-
+          <h2 className={styles.footer_author}>&copy; 2021 Kacper Dobrowolski <br /> Wszelkie prawa zastrzeżone</h2>
+          <div className={styles.socials}>
+            <ul className={styles.socials_list}>
+              <li className={styles.list_item}>
+                  <i className="bi bi-facebook"></i>
+              </li>
+              <li className={styles.list_item}>
+                  <i className="bi bi-github"></i>
+              </li>
+              <li className={styles.list_item}>
+                  <i className="bi bi-whatsapp"></i>
+              </li>
+            </ul>
+          </div>
       </footer>
     </div>
   )

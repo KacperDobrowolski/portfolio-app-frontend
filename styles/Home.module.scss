@@ -20,3 +20,26 @@
         letter-spacing: 1px;
     }
 }
+
+.footer {
+    width: 100%;
+    background-color: $primary-color;
+    padding: 30px 0 30px 0;
+    text-align: center;
+    color: white;
+    & > .socials {
+        margin-top: 20px;
+        & > .socials_list {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            & > .list_item {
+                font-size: 3rem;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
