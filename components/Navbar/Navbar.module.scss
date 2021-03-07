@@ -5,9 +5,12 @@
     height: 50px;
     display: flex;
     justify-content: space-around;
+    position: fixed;
+    z-index: 999 !important;
+    background-color: white;
     & > .logo {
         position: relative;
-        top: 12px;
+        top: 8px;
         margin: 0;
         letter-spacing: 1px;
         font-size: 2rem;
@@ -16,18 +19,31 @@
     & > i {
         font-size: 4rem;
         position: relative;
-        bottom: 7px;
+        bottom: 15px;
+        &:hover {
+            cursor: pointer;
+        }
     }
     & > .closeIcon {
         display: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    & > .nav_list {
+        display: none;
+        & > .list_item:hover {
+            cursor: pointer;
+        }
     }
 }
 
 .opened {
     height: 100vh;
     background-color: white;
-    z-index: 999 !important;
-    position: fixed;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
     & > i {
         display: none;
     }
@@ -35,8 +51,43 @@
         display: block;
         position: absolute;
         right: 20px;
-        top: 10px;
+        top: 8px;
         font-size: 3rem;
 
+    }
+    .logo {
+        font-size: 2.5rem;
+    }
+    & > .nav_list {
+        display: block;
+        padding: 0;
+        list-style: none;
+        font-size: 1.8rem;
+        & > .list_item {
+            margin-top: 20px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar {
+        & > i {
+            display: none;
+        }
+        & > .nav_list {
+            display: block !important;
+            padding: 0;
+            list-style: none;
+            font-size: 1.5rem;
+            position: relative;
+            bottom: 5px;
+            & > .list_item {
+                display: inline-block;
+                margin-left: 40px;
+            }
+        }
     }
 }

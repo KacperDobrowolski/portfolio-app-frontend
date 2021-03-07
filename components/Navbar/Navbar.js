@@ -12,6 +12,12 @@ const Navbar = () => {
     return (
         <nav className={styles.navbar} ref={navbarRef}>
             <h2 className={styles.logo}>Portfolio App</h2>
+            <ul className={styles.nav_list}>
+                <li className={styles.list_item}>Strona główna</li>
+                <li className={styles.list_item}>Oferta</li>
+                <li className={styles.list_item}>Portfolio</li>
+                <li className={styles.list_item}>Kontakt</li>
+            </ul>
             <i className="bi bi-list" onClick={openNav}></i>
             <span className={styles.closeIcon} onClick={closeNav}>X</span>
         </nav>

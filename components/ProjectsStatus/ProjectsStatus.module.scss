@@ -31,3 +31,10 @@
         }
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .projectsStatus {
+        display: flex;
+        justify-content: space-around;
+    }
+}

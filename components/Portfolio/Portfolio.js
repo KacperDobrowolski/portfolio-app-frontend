@@ -12,9 +12,17 @@ const Portfolio = () => {
                     <li className={styles.list_item}>Nieukończone</li>
                 </ul>
             </div>
-            <div className={styles.project}></div>
-            <div className={styles.project}></div>
-            <div className={styles.project}></div>
+            <div className={styles.projects_list}>
+                <div className={styles.list_item}>
+                    <div className={styles.item_project}></div>
+                </div>
+                <div className={styles.list_item}>
+                    <div className={styles.item_project}></div>
+                </div>
+                <div className={styles.list_item}>
+                    <div className={styles.item_project}></div>
+                </div>
+            </div>
             <Button text="Zobacz więcej" color={false}/>
         </section>
     )

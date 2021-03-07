@@ -28,7 +28,7 @@
             }
         }
     }
-    & > .project {
+    & > .projects_list > .list_item > .item_project {
         background-image: url("/assets/images/header.jpg");
         background-size: cover;
         background-position: center;
@@ -36,5 +36,32 @@
         height: 200px;
         border-radius: 20px;
         margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .projects_list { 
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        & > .list_item {
+            width: 50% !important;
+            & > .item_project {
+                width: 90% !important;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .projects_list > .list_item {
+        width: 33% !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .projects_list > .list_item {
+        width: 25% !important;
     }
 }
