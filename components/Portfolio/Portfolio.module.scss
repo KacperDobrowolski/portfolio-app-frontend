@@ -21,9 +21,14 @@
                 padding: 5px 5px 5px 5px;
                 border-radius: 20px;
                 width: 50%;
+                border: 1px solid $primary-color;
+                color: $primary-color;
                 &:first-child {
                     background-color: $primary-color;
                     color: white;
+                }
+                &:hover {
+                    cursor: pointer;
                 }
             }
         }
@@ -50,6 +55,12 @@
                 width: 90% !important;
                 margin: 0 auto;
             }
+        }
+    }
+    .portfolio_list {
+        display: flex;
+        & > .list_item {
+            width: 200px !important;
         }
     }
 }

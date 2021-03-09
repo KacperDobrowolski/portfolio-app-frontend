@@ -1,5 +1,6 @@
 import styles from './Portfolio.module.scss';
 import Button from '../Button/Button';
+import Project from '../Project/Project';
 
 const Portfolio = () => {
     return (
@@ -14,13 +15,13 @@ const Portfolio = () => {
             </div>
             <div className={styles.projects_list}>
                 <div className={styles.list_item}>
-                    <div className={styles.item_project}></div>
+                    <Project />
                 </div>
                 <div className={styles.list_item}>
-                    <div className={styles.item_project}></div>
+                    <Project />
                 </div>
                 <div className={styles.list_item}>
-                    <div className={styles.item_project}></div>
+                    <Project />
                 </div>
             </div>
             <Button text="Zobacz więcej" color={false}/>
