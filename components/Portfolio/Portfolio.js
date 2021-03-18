@@ -15,7 +15,7 @@ const Portfolio = () => {
         return <div>Loading ...</div>
     }
     return (
-        <section className={styles.portfolio}>
+        <section className={styles.portfolio} id="portfolio">
             <h2 className={styles.portfolio_headline}>Moje projekty</h2>
             <div className={styles.portfolio_options}>
                 <ul className={styles.portfolio_list}>

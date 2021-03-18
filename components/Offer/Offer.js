@@ -3,7 +3,7 @@ import styles from './Offer.module.scss';
 
 const Offer = () => {
     return (
-        <section className={styles.offer}>
+        <section className={styles.offer} id="offer">
             <h2 className={styles.offer_headline}>Co oferuje?</h2>
             <p className={styles.offer_underline}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat, mauris vitae imperdiet porta, ante nibh rutrum nisl, nec aliquam metus ante eget augue.</p>
             <div className={styles.offerItems}>

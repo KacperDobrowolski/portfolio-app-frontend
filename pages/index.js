@@ -18,7 +18,7 @@ export default function Home() {
       <main className={styles.main}>
         <Layout>
 
-            <div className={styles.header_image}>
+            <div className={styles.header_image} id="home">
               <h2 className={styles.header_headline}>Kacper Dobrowolski</h2>
               <p className={styles.header_underline}>Junior Full-Stack Developer</p>
               <Button text="ZOBACZ WIĘCEJ" color={true}/>
