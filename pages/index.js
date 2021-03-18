@@ -6,6 +6,7 @@ import ProjectsStatus from '../components/ProjectsStatus/ProjectsStatus';
 import Portfolio from '../components/Portfolio/Portfolio';
 import styles from '../styles/Home.module.scss'
 import Contact from '../components/Contact/Contact';
+import { Link } from 'react-scroll';
 
 export default function Home() {
   return (
@@ -21,7 +22,9 @@ export default function Home() {
             <div className={styles.header_image} id="home">
               <h2 className={styles.header_headline}>Kacper Dobrowolski</h2>
               <p className={styles.header_underline}>Junior Full-Stack Developer</p>
-              <Button text="ZOBACZ WIĘCEJ" color={true}/>
+                <Link to="offer" spy={true} smooth={true}>
+                    <Button text="ZOBACZ WIĘCEJ" color={true}/>
+                </Link>
             </div>
 
             <Offer />

@@ -15,16 +15,16 @@ const Navbar = () => {
             <h2 className={styles.logo}>Portfolio App</h2>
             <ul className={styles.nav_list}>
                 <li className={styles.list_item}>
-                    <Link to="home" spy={true} smooth={true}>Strona główna</Link>
+                    <Link onClick={closeNav} to="home" spy={true} smooth={true}>Strona główna</Link>
                 </li>
                 <li className={styles.list_item}>
-                    <Link to="offer" spy={true} smooth={true}>Oferta</Link>
+                    <Link onClick={closeNav} to="offer" spy={true} smooth={true}>Oferta</Link>
                 </li>
                 <li className={styles.list_item}>
-                    <Link to="portfolio" spy={true} smooth={true}>Portfolio</Link>
+                    <Link onClick={closeNav} to="portfolio" spy={true} smooth={true}>Portfolio</Link>
                 </li>
                 <li className={styles.list_item}>
-                    <Link to="contact" spy={true} smooth={true}>Kontakt</Link>
+                    <Link onClick={closeNav} to="contact" spy={true} smooth={true}>Kontakt</Link>
                 </li>
             </ul>
             <i className="bi bi-list" onClick={openNav}></i>
